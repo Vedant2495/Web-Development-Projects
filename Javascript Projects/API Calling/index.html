@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Application</title>
+    <style>
+        body{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        h1{
+            text-align: center;
+        }
+        #app-container{
+            border: 1px solid black;
+            padding: 10px;
+        }
+        .hidden{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="app-container">
+        <h1>Weather App</h1>
+        <div id="input-div">
+            <input type="text" id="city-input">
+            <button id="check-weather">Check</button>
+        </div>
+        <div id="information" class="hidden">
+            <h3 id="city-name"></h3>
+            <h3 id="temperature-detail"></h3>
+            <h3 id="weather-detail"></h3>
+        </div>
+        <p id="error-detail" class="hidden">Cannot Find City and other error</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

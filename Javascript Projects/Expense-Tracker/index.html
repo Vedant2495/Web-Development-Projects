@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <style>
+        body{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #1a1a1a;
+        }
+        #container{
+            border: 1px solid black;
+            padding: 10px;
+            background-color: #a49f9f;
+            border-radius: 10px;
+        }
+
+        #total-expense{
+            margin-top: 10px;
+        }
+
+        .expense{
+            display: flex;
+            justify-content: space-between;
+            border: 0.5 solid black;
+            margin: 4px;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+
+        <h2>Expense Tracker</h2>
+
+        <!-- Expense user Input -->
+        <div id="expense-details"> 
+            <input type="text" id="expense-name" placeholder="Enter Your Expense">
+            <input type="number" id="expense-price" placeholder="Price Of Expense">
+            <button id="add-btn">Add</button>
+        </div>
+
+        <!-- Expense Adding  -->
+        <div id="expense-tracking">
+            <h4>Expense</h4>
+            <!-- Add Expense in this div -->
+            <div id="expense-list">
+
+            </div>
+        </div>
+
+        <!-- Total Expense  -->
+        <div id="total-expense">
+            <span>Total : </span>
+            <span id="expense-amount">$0</span>
+        </div>
+
+    </div>
+    
+    <script src="script2.js"></script>
+</body>
+</html>
